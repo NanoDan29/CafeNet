@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700");
 @import "boxSizing";
 @import "Globales";
+@import "nav";
 
 .no-margin {
   margin: 0;
@@ -11,45 +12,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60rem;
-}
-.barra {
-  border: 1px solid;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-
-
-
-
-
-
-.site-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.site-header h1 {
-  text-align: center;
-  font-weight: 400;
-}
-
-.site-header h1 span {
-  font-weight: 700;
-}
-
-.navegacion a {
-  text-align: center;
-  display: block;
-  font-size: 1.8rem;
+  height: 600px;
 }
 
 .texto-header {
   color: #fff;
   text-align: center;
   margin-top: 5rem;
+}
+
+@media (min-width: 768px){
+  .texto-header{
+    margin-top:13rem;
+  }
 }
 
 .texto-header p {

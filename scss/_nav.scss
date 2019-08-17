@@ -1,0 +1,42 @@
+.barra {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 400;
+        padding: 1rem;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .navegacion {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navegacion {
+            display: inline;
+
+            a {
+                margin-left: 0.5rem;
+            }
+
+            a:last-of-type {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
