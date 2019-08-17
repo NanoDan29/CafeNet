@@ -1,7 +1,7 @@
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
-
+    width: 80%;
 }
 
 h1,
@@ -17,6 +17,7 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
+    line-height: 2.9rem;
 }
 
 h3 {
@@ -24,9 +25,30 @@ h3 {
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 img {
     max-width: 100%;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+
+}
+.btn-primario {
+    background-color: #000000;
+}
+
+.btn-secundario {
+    background-color: #28d54c;
 }
