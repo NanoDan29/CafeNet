@@ -2,40 +2,11 @@
 @import "boxSizing";
 @import "Globales";
 @import "nav";
-
-//Header
-
-.no-margin {
-  margin: 0;
-}
-
-.site-header {
-  background-image: url(../img/banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 600px;
-}
-
-.texto-header {
-  color: #fff;
-  text-align: center;
-  margin-top: 5rem;
-}
-
-@media (min-width: 768px) {
-  .texto-header {
-    margin-top: 13rem;
-  }
-}
-
-.texto-header p {
-  font-size: 2.2rem;
-}
-
-//Contenido Principal
+@import "footer";
+@import "header";
 
 .contenido-principal {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column-reverse;
 
@@ -92,6 +63,7 @@
   .curso {
     padding-bottom: 3rem;
     border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
     p{
       font-family: 'PT Sans', sans-serif;
       font-weight: 700;
@@ -105,5 +77,6 @@
 
   .curso::last-of-type {
     border-bottom: 0;
+    margin-bottom: 0;
   }
 }
