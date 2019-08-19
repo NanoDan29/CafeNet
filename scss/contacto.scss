@@ -4,3 +4,46 @@
 @import "Globales";
 @import "footer";
 @import "boxSizing";
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.formulario-contacto {
+    background-color: #fff;
+    padding: 5rem;
+    flex-basis: 90%;
+
+    .campo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        label {
+            flex: 0 0 8rem;
+            text-align: right;
+            padding: 1rem;
+        }
+
+        input,
+        textarea {
+            flex: 1;
+        }
+        textarea{
+            width: 100%;
+            height: 200px;
+           
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}

@@ -3,6 +3,10 @@ html{
     font-size: 60.5%;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body{
     font-family: 'Open Sans' , sans-serif;
     font-size: 1.6rem;
