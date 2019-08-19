@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700");
+@import "header";
+@import "nav";
+@import "Globales";
+@import "footer";
+@import "boxSizing";
+
+
+
+.curso {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+
+    p {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+
+        span,
+        .descripcion {
+            font-weight: 400;
+        }
+    }
+
+    .descripcion {
+        font-weight: 400;
+    }
+
+
+
+}
+
+.curso::last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .curso {
+        display: flex;
+        justify-content: space-between;
+
+        .columnas-4 {
+            flex: 0 0 calc(30% - 2rem);
+        }
+
+        .columnas-8 {
+            flex: 0 0 66%;
+        }
+    }
+
+
+}
